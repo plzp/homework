@@ -2,10 +2,10 @@
 
 int main()
 {
-    float distance, money;
-    int minute;
+    float distance; 
+    int minute,money;
     printf("please enter distance,minute");
-    scanf("%f %d %f", &distance & minute & money);
+    scanf("%f %d ", & distance, & minute );
     if (distance <= 3)
     {
         if (minute >= 5)
@@ -28,7 +28,7 @@ int main()
             money = 10 + (10 - distance) * 2;
         }
     }
-    else if (distance > 10)
+    else if  (distance > 10)
     {
         if (minute >= 5)
         {
@@ -39,6 +39,6 @@ int main()
             money = 10 + (10 - distance) * 2 + (distance - 10) * 3;
         }
     }
-    printf("money is %f", money);
+    printf("money is %d", money);
     return 0;
 }
