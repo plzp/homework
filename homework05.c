@@ -20,7 +20,7 @@ int main()
         {
             min = a[i];
         }
-        printf("min is %d\n", min);
     }
-    return 0;
+    printf("min is %d \n",min);
+   return 0;
 }
